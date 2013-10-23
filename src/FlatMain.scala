@@ -12,7 +12,7 @@ class FlatMain extends Application {
 
   def start(primaryStage: Stage) {
     primaryStage.setTitle("Colour Grid")
-    val root: Parent = new ColorGrid(2)
+    val root: Parent = new ColorGrid(100)
     primaryStage.setScene(new Scene(root))
     primaryStage.show()
   }
