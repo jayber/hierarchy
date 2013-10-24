@@ -34,7 +34,6 @@ class ColorGrid(size: Int) extends GridPane {
   for (x <- 0 until size) {
     for (y <- 0 until size) {
       grid(x)(y).neighbours = neighbours(x, y, grid)
-      grid(x)(y).start()
     }
   }
 }
