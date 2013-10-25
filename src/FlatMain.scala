@@ -23,5 +23,4 @@ class FlatMain extends Application {
     })
   }
 
-
 }

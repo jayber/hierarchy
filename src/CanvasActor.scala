@@ -3,7 +3,6 @@ import scala.actors.Actor
 
 object CanvasActor extends Actor {
 
-
   def act() {
     while (true) {
       receive {
