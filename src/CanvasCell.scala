@@ -58,7 +58,8 @@ class CanvasCell(gc: GraphicsContext, cellSize: Int, size: Int) {
 
     def crossPart(xoffset: Int, yoffset: Int, x: Int, y: Int) = {
       (math.abs(xoffset) < 2 && math.abs(yoffset) < 2) ||
-        (xoffset == 2 && (y / 4) % 8 == 0)
+        (math.abs(xoffset) == (y % 7) - 3) ||
+        (math.abs(yoffset) == (x % 7) - 3)
     }
 
     for (xoffset <- -2 to 2) {
